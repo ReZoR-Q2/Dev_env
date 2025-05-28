@@ -1,0 +1,11 @@
+.gitignor
+venv/
+.pylintrc
+__pycache__/
+
+.vccode
+.idea
+.env
+
+db.sqlite3
+media/
