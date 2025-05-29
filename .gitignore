@@ -1,9 +1,11 @@
+.gitignor
 venv/
-.pylinrs
-__pycache__
+.pylintrc
+__pycache__/
 
-.vscode
+.vccode
 .idea
+.env
 
 db.sqlite3
 media/
