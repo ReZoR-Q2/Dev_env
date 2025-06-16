@@ -1,8 +1,3 @@
-from email.mime import image
-from email.policy import default
-from pyexpat import model
-from tabnanny import verbose
-from unicodedata import category
 from django.db import models
 
 class Categories(models.Model):
@@ -14,6 +9,8 @@ class Categories(models.Model):
         verbose_name = 'Категорию'
         verbose_name_plural = 'Категории'
         
+    def __str__(self):
+        return self.name
         
         
 class Products(models.Model):
@@ -30,3 +27,6 @@ class Products(models.Model):
         db_table = 'product'
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
+        
+        def __str__(self):
+            return f'{self.name} Количество - {self.quantity}'
